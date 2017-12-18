@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'app works!'; 
+  
+  public isClickedVisible = false;
+  public toggleMenu = function () {
+      this.isClickedVisible = !this.isClickedVisible;
+  }
 }

@@ -1,3 +1,38 @@
-<h1>
-  {{title}}
-</h1>
+
+   <!-- Navigation with router directives-->
+   <header class="style__header___2uitE">
+        <div class="style__headerInner___3-EwF grid__container___3goUT">
+          <div class="style__logo___2wWKE">
+            <a href="/">
+              <div class="style__logoWrap___1wDu-">
+                <div class="style__logoDefault___1lekO"><img src="api/cache/full___storage___db___portfolio___logo@2x.png" width="25" height="26"></div>
+                <div class="style__logoInverse___2d2wa"><img src="api/cache/full___storage___db___portfolio___logo.inverse@2x.png" width="25" height="26"></div>
+                <div
+                  class="style__logoActive___3qQMw"><img src="api/cache/full___storage___db___portfolio___logo.active@2x.png" width="25" height="26"></div>
+          </div>
+          </a>
+        </div>
+        <nav id="nav" class="style__nav___FTJ6X style__nav___1wP3z grid__clear___lRjVw" [ngClass]="{'style__active___X6av_': isClickedVisible }">
+          <div class="style__burger___1S-dE" (click)="isClickedVisible = !isClickedVisible;">
+            <span class="style__arrow___1Thm- style__menu___WNN0Z" >
+                <span class="style__arrowInner___2se4z"> 
+                  <span class="style__line___Nt9qj style__first___1N2QW"></span>
+                  <span class="style__line___Nt9qj style__second___BzMHR"></span>
+              </span>
+              </span>
+          </div>
+          <div class="style__navInner___3VQ6W">
+            <ul>
+              <li class="style__pageActive___18OXS">
+                 <a class="mdl-navigation__link" [routerLink]="['/home']">Home</a>
+             </li>
+              <li class=""><a class="mdl-navigation__link" [routerLink]="['/about']">About</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    </header>
+
+
+ <!-- Router Outlet -->
+    <router-outlet></router-outlet>
