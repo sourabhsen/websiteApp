@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './skills.html'
+  templateUrl: './skills.html',
+    styleUrls:['./skills.css']
 })
 
 // Component class
