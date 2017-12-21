@@ -1,0 +1,397 @@
+#pages {
+    position: fixed;
+    overflow: hidden;
+    background: #111 url('api/cache/grid.png') fixed center;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+.page {
+    display: none;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    width: auto;
+    height: auto;
+    z-index: 20;
+}
+
+#portfolio h2 {
+    font-family: nexa_boldregular;
+    font-weight: normal;
+    font-size: 2.8em;
+    color: white;
+    text-transform: uppercase;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    width: 100%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+button {
+    font-family: Cousine;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 1em 1.4em;
+    margin: 1em 0;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    white-space: nowrap;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+#portfolio .item {
+    -webkit-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, -webkit-transform 0.8s, opacity 0.6s;
+    -webkit-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
+    -moz-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
+    -ms-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
+    -o-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
+    transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
+    -webkit-transform: perspective(600px) rotateX(30deg) scale(0.8);
+    -moz-transform: perspective(600px) rotateX(30deg) scale(0.8);
+    -ms-transform: perspective(600px) rotateX(30deg) scale(0.8);
+    -o-transform: perspective(600px) rotateX(30deg) scale(0.8);
+    transform: perspective(600px) rotateX(30deg) scale(0.8);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 32.3%;
+    height: 300px;
+    min-height: 260px;
+    background: url("api/cache/logosoftheworld.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-origin: border-box;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+
+#portfolio .item.hoverable:hover, #portfolio .item.hover {
+    -webkit-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
+    -moz-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
+    -ms-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
+    -o-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
+    transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 9;
+    background-position: 20% 60%;
+}
+
+#portfolio .item.normal {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    -moz-transform: perspective(600px) rotateX(0deg);
+    -ms-transform: perspective(600px) rotateX(0deg);
+    -o-transform: perspective(600px) rotateX(0deg);
+    transform: perspective(600px) rotateX(0deg);
+    opacity: 1;
+}
+
+#portfolio .item h2 {
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
+    display: inline;
+}
+
+#portfolio .item .viewdetails {
+    max-width: 300px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#portfolio .item .scrolldown {
+    max-width: 0;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#portfolio .item .line {
+    margin: 1em 0;
+    width: 20px;
+    height: 2px;
+    display: block;
+    background: #0bf;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#portfolio .item p {
+    margin: 1em 0;
+}
+
+#portfolio .item .bg {
+    background: #000;
+    background: -webkit-gradient(linear, left center, right center, color-stop(0, #000000), color-stop(1, rgba(0, 0, 0, 0.5)));
+    background: -ms-linear-gradient(left, #000000, rgba(0, 0, 0, 0.5));
+    background: -moz-linear-gradient(center left, #000 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), #000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.5)', endColorstr='#000000', GradientType=1);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#portfolio .item.hoverable:hover .bg, #portfolio .item.hover .bg {
+    opacity: 0.3;
+}
+
+#portfolio .item .info {
+    padding: 4em;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#portfolio .item .content {
+    opacity: 0;
+    min-height: 100%;
+    width: 100%;
+    padding-top: 6em;
+    background: white;
+    position: relative;
+    z-index: 3;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#portfolio .item .content .wrapper {
+    margin: 0 auto;
+    max-width: 815px;
+    width: 90%;
+}
+
+#portfolio .item .content .wrapper p {
+    text-align: center;
+    color: black;
+}
+
+#portfolio .item .content .wrapper p .line {
+    margin: 1em auto;
+}
+
+#portfolio .item .break {
+    display: none;
+}
+
+#portfolio .item .subitem {
+    width: 100%;
+    margin: 100px -50%;
+    position: relative;
+}
+
+#portfolio .item .monitor {
+    position: absolute;
+    width: 100%;
+}
+
+#portfolio .item .image {
+    position: absolute;
+    width: 100%;
+    padding: 3.7% 3.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#portfolio .item .monitor2 {
+    width: 100%;
+    padding: 4.1% 4% 22.3% 4%;
+    background: url('api/cache/imac@2x.png') no-repeat;
+    background-size: cover;
+    margin-bottom: 6em;
+    margin-left: -4%;
+}
+
+#portfolio .item .chrome {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: url('api/cache/chrome.jpg');
+    height: 32px;
+    width: 100%;
+    border: 1px solid #c1c1c1;
+    box-sizing: border-box;
+}
+
+#portfolio .item .window {
+    width: 100%;
+}
+
+#portfolio .item iframe, #portfolio .item .window {
+    border: 1px solid #c1c1c1;
+    border-top: none;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    box-shadow: 0 10px 55px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio .item.active {
+    height: 100%;
+    opacity: 1;
+    background-size: cover;
+    top: 0;
+}
+
+#portfolio .item.active h2 {
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    font-size: 16em;
+    width: 90%;
+    min-width: 988px;
+}
+
+#portfolio .item.active .info .line {
+    margin: 2em 0;
+    width: 80px;
+    height: 4px;
+    background: #FFF;
+}
+
+#portfolio .item.active .viewdetails {
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
+    max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 0;
+}
+
+#portfolio .item.active .scrolldown {
+    -webkit-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
+    -moz-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
+    -ms-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
+    -o-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
+    transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
+    opacity: 1;
+    max-width: 300px;
+}
+
+#portfolio .item.active .bg {
+    opacity: 0 !IMPORTANT;
+}
+
+#portfolio .item.active .content {
+    opacity: 1;
+}
+
+#portfolio .formstudio {
+    background-image: url("api/cache/4mstudio.jpg");
+}
+
+#portfolio .formstudio.active .info {
+    background: rgba(57, 135, 207, 0.9);
+}
+
+#portfolio .bigswordfish {
+    background-image: url("api/cache/bigswordfish.jpg");
+}
+
+#portfolio .bigswordfish.active .info {
+    background: rgba(30, 58, 85, 0.9);
+}
+
+#portfolio .logosoftheworld {
+    background-image: url("api/cache/logosoftheworld.jpg");
+}
+
+#portfolio .logosoftheworld.active .info {
+    background: rgba(201, 141, 85, 0.9);
+}
+
+#portfolio .revoltcms {
+    background-image: url("api/cache/revoltcms.jpg");
+}
+
+#portfolio .revoltcms.active .info {
+    background-color: rgba(38, 0, 105, 0.95);
+}
+
+#portfolio .saifdesign {
+    background-image: url("api/cache/saifdesign.jpg");
+}
+
+#portfolio .marina {
+    background-image: url("api/cache/marina.jpg");
+}
+
+#portfolio .mirohristov {
+    background-image: url("api/cache/mirohristov.jpg");
+}
+
+#portfolio .mirohristov.active .info {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#portfolio .spacer {
+    height: 600px;
+    display: none;
+}

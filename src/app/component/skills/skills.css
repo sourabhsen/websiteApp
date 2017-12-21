@@ -1,19 +1,6 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-    display: block;
-}
 
-body {
-    line-height: 1;
-}
+
 
 ol,ul {
     list-style: none;
@@ -1718,7 +1705,7 @@ h2 {
 
 .bg.clouds {
     position: fixed;
-    background: url(/v5/img/bg.jpg);
+    background: url(api/cache/bg.jpg);
     background-position: 50% 60%;
     background-size: 100%;
     width: 110% !IMPORTANT;
@@ -1734,7 +1721,7 @@ h2 {
 }
 
 #homepage .bg.roof {
-    background: url(/v5/img/bg2.png) repeat-x;
+    background: url(api/cache/bg2.png) repeat-x;
     background-position: 50% 60%;
     background-size: 100%;
     width: 120% !IMPORTANT;
@@ -1743,7 +1730,7 @@ h2 {
 }
 
 #homepage .bg.grid {
-    background: url(/v5/img/bg1.png) center center;
+    background: url(api/cache/bg1.png) center center;
 }
 
 #homepage .splash {
@@ -1949,7 +1936,7 @@ h2 {
 #pages {
     position: fixed;
     overflow: hidden;
-    background: #111 url('/v5/img/grid.png') fixed center;
+    background: #111 url('api/cache/grid.png') fixed center;
     top: 100%;
     left: 0;
     right: 0;
@@ -1971,346 +1958,14 @@ h2 {
     z-index: 20;
 }
 
-#portfolio .item {
-    -webkit-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, -webkit-transform 0.8s, opacity 0.6s;
-    -webkit-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
-    -moz-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
-    -ms-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
-    -o-transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
-    transition: height 0.6s, background-position 0.6s, box-shadow 1s, top 0.6s, padding-top 0.6s, transform 0.8s, opacity 0.6s;
-    -webkit-transform: perspective(600px) rotateX(30deg) scale(0.8);
-    -moz-transform: perspective(600px) rotateX(30deg) scale(0.8);
-    -ms-transform: perspective(600px) rotateX(30deg) scale(0.8);
-    -o-transform: perspective(600px) rotateX(30deg) scale(0.8);
-    transform: perspective(600px) rotateX(30deg) scale(0.8);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 32.3%;
-    height: 300px;
-    min-height: 260px;
-    background: url("/v5/img/logosoftheworld.jpg");
-    background-size: cover;
-    background-position: center top;
-    background-origin: border-box;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-}
-
-#portfolio .item.hoverable:hover, #portfolio .item.hover {
-    -webkit-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
-    -moz-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
-    -ms-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
-    -o-transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
-    transition: height 0.6s, background-position 15.0s 1.0s, box-shadow 1s;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 9;
-    background-position: 20% 60%;
-}
-
-#portfolio .item.normal {
-    -webkit-transform: perspective(600px) rotateX(0deg);
-    -moz-transform: perspective(600px) rotateX(0deg);
-    -ms-transform: perspective(600px) rotateX(0deg);
-    -o-transform: perspective(600px) rotateX(0deg);
-    transform: perspective(600px) rotateX(0deg);
-    opacity: 1;
-}
-
-#portfolio .item h2 {
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0;
-    display: inline;
-}
-
-#portfolio .item .viewdetails {
-    max-width: 300px;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-#portfolio .item .scrolldown {
-    max-width: 0;
-    opacity: 0;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-#portfolio .item .line {
-    margin: 1em 0;
-    width: 20px;
-    height: 2px;
-    display: block;
-    background: #0bf;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    -o-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-
-#portfolio .item p {
-    margin: 1em 0;
-}
-
-#portfolio .item .bg {
-    background: #000;
-    background: -webkit-gradient(linear, left center, right center, color-stop(0, #000000), color-stop(1, rgba(0, 0, 0, 0.5)));
-    background: -ms-linear-gradient(left, #000000, rgba(0, 0, 0, 0.5));
-    background: -moz-linear-gradient(center left, #000 0%, rgba(0, 0, 0, 0.5) 100%);
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), #000000);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.5)', endColorstr='#000000', GradientType=1);
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-#portfolio .item.hoverable:hover .bg, #portfolio .item.hover .bg {
-    opacity: 0.3;
-}
-
-#portfolio .item .info {
-    padding: 4em;
-    position: relative;
-    z-index: 2;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-#portfolio .item .content {
-    opacity: 0;
-    min-height: 100%;
-    width: 100%;
-    padding-top: 6em;
-    background: white;
-    position: relative;
-    z-index: 3;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-#portfolio .item .content .wrapper {
-    margin: 0 auto;
-    max-width: 815px;
-    width: 90%;
-}
-
-#portfolio .item .content .wrapper p {
-    text-align: center;
-    color: black;
-}
-
-#portfolio .item .content .wrapper p .line {
-    margin: 1em auto;
-}
-
-#portfolio .item .break {
-    display: none;
-}
-
-#portfolio .item .subitem {
-    width: 100%;
-    margin: 100px -50%;
-    position: relative;
-}
-
-#portfolio .item .monitor {
-    position: absolute;
-    width: 100%;
-}
-
-#portfolio .item .image {
-    position: absolute;
-    width: 100%;
-    padding: 3.7% 3.5%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-#portfolio .item .monitor2 {
-    width: 100%;
-    padding: 4.1% 4% 22.3% 4%;
-    background: url('/v5/img/imac@2x.png') no-repeat;
-    background-size: cover;
-    margin-bottom: 6em;
-    margin-left: -4%;
-}
-
-#portfolio .item .chrome {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: url('/v5/img/chrome.jpg');
-    height: 32px;
-    width: 100%;
-    border: 1px solid #c1c1c1;
-    box-sizing: border-box;
-}
-
-#portfolio .item .window {
-    width: 100%;
-}
-
-#portfolio .item iframe, #portfolio .item .window {
-    border: 1px solid #c1c1c1;
-    border-top: none;
-    box-sizing: border-box;
-    margin-bottom: 100px;
-    box-shadow: 0 10px 55px rgba(0, 0, 0, 0.5);
-}
-
-#portfolio .item.active {
-    height: 100%;
-    opacity: 1;
-    background-size: cover;
-    top: 0;
-}
-
-#portfolio .item.active h2 {
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    -o-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-    font-size: 16em;
-    width: 90%;
-    min-width: 988px;
-}
-
-#portfolio .item.active .info .line {
-    margin: 2em 0;
-    width: 80px;
-    height: 4px;
-    background: #FFF;
-}
-
-#portfolio .item.active .viewdetails {
-    -webkit-transition-delay: 2s;
-    -moz-transition-delay: 2s;
-    -ms-transition-delay: 2s;
-    -o-transition-delay: 2s;
-    transition-delay: 2s;
-    max-width: 0;
-    padding-left: 0;
-    padding-right: 0;
-    opacity: 0;
-}
-
-#portfolio .item.active .scrolldown {
-    -webkit-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
-    -moz-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
-    -ms-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
-    -o-transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
-    transition: width 0.5s ease 2s, opacity 0.5s ease 2s, background 0.5s, color 0.5s;
-    opacity: 1;
-    max-width: 300px;
-}
-
-#portfolio .item.active .bg {
-    opacity: 0 !IMPORTANT;
-}
-
-#portfolio .item.active .content {
-    opacity: 1;
-}
-
-#portfolio .formstudio {
-    background-image: url("/v5/img/4mstudio.jpg");
-}
-
-#portfolio .formstudio.active .info {
-    background: rgba(57, 135, 207, 0.9);
-}
-
-#portfolio .bigswordfish {
-    background-image: url("/v5/img/bigswordfish.jpg");
-}
-
-#portfolio .bigswordfish.active .info {
-    background: rgba(30, 58, 85, 0.9);
-}
-
-#portfolio .logosoftheworld {
-    background-image: url("/v5/img/logosoftheworld.jpg");
-}
-
-#portfolio .logosoftheworld.active .info {
-    background: rgba(201, 141, 85, 0.9);
-}
-
-#portfolio .revoltcms {
-    background-image: url("/v5/img/revoltcms.jpg");
-}
-
-#portfolio .revoltcms.active .info {
-    background-color: rgba(38, 0, 105, 0.95);
-}
-
-#portfolio .saifdesign {
-    background-image: url("/v5/img/saifdesign.jpg");
-}
-
-#portfolio .marina {
-    background-image: url("/v5/img/marina.jpg");
-}
-
-#portfolio .mirohristov {
-    background-image: url("/v5/img/mirohristov.jpg");
-}
-
-#portfolio .mirohristov.active .info {
-    background-color: rgba(0, 0, 0, 0.95);
-}
-
-#portfolio .spacer {
-    height: 600px;
-    display: none;
-}
-
 #about {
-    background: url('/v5/img/profile.jpg') center;
+    background: url('api/cache/profile.jpg') center;
     background-size: cover;
     overflow: auto;
 }
 
 #about .bg {
-    background: url(/v5/img/grid.png) center center fixed;
+    background: url(api/cache/grid.png) center center fixed;
     z-index: -1;
 }
 
@@ -2370,7 +2025,7 @@ section.visible .sep {
 
 #about section .dials>div {
     opacity: 0;
-    background: url(/v5/img/arrows.png) left center;
+    background: url(api/cache/arrows.png) left center;
     display: inline-block;
     width: 270px;
     height: 0px;
@@ -2401,7 +2056,7 @@ section.visible .sep {
 }
 
 #about section .dials>div>div {
-    background: url(/v5/img/arrows-back.png);
+    background: url(api/cache/arrows-back.png);
     width: 270px;
     height: 370px;
     position: relative;
@@ -2422,11 +2077,11 @@ section.visible .sep {
 
 section .skills li {
     display: inline-block;
-    margin: -30px 15px 0;
+    margin: -30px 15px 0 !important;
     position: relative;
     width: 188px;
     height: 216px;
-    background: url('/v5/img/hexagon.png');
+    background: url('api/cache/hexagon.png');
     -webkit-transition: 2s;
     -moz-transition: 2s;
     -ms-transition: 2s;
@@ -2465,13 +2120,13 @@ section.visible .skills li {
 }
 
 #contact {
-    background: url('/v5/img/dc.jpg') center top fixed;
+    background: url('api/cache/dc.jpg') center top fixed;
     background-size: cover;
     overflow: hidden;
 }
 
 #contact .bg {
-    background: url(/v5/img/grid.png) center center fixed;
+    background: url(api/cache/grid.png) center center fixed;
 }
 
 #contact .info {
@@ -2539,7 +2194,7 @@ section.visible .skills li {
     position: fixed;
     display: block;
     z-index: 99999;
-    background: #111 url('/v5/img/grid.png') fixed center;
+    background: #111 url('api/cache/grid.png') fixed center;
 }
 
 .preloader img {
@@ -2732,14 +2387,14 @@ section.visible .skills li {
 }
 
 .onepagelove {
-    background: url('/v5/img/one-page-love-award.png') right center;
+    background: url('api/cache/one-page-love-award.png') right center;
     margin-top: -71px;
     width: 73px;
     height: 56px;
 }
 
 .csslight {
-    background: url('/v5/img/small-csslight-ribbon-black-light-right.png') right center;
+    background: url('api/cache/small-csslight-ribbon-black-light-right.png') right center;
     margin-top: 5px;
     width: 84px;
     height: 29px;

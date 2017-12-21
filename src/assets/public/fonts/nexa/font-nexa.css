@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('http://mirohristov.com/v5/font/fontawesome-webfont.woff');
+    src: url('http://mirohristov.com/v5/font/fontawesome-webfont.eot') format('embedded-opentype'), 
+    url('http://mirohristov.com/v5/font/fontawesome-webfont.woff') format('woff'), 
+    url('http://mirohristov.com/v5/font/fontawesome-webfont.ttf') format('truetype'), 
+    url('http://mirohristov.com/v5/font/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('http://mirohristov.com/v5/font/nexa_bold-webfont.eot');
+    src: url('http://mirohristov.com/v5/font/nexa_bold-webfont.woff') format('embedded-opentype'), 
+     url('http://mirohristov.com/v5/font/nexa_bold-webfont.woff') format('woff'),
+     url('http://mirohristov.com/v5/font/nexa_bold-webfont.ttf') format('truetype'), 
+     url('http://mirohristov.com/v5/font/nexa_bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('http://mirohristov.com/v5/font/nexa_light-webfont.eot');
+    src: url('http://mirohristov.com/v5/font/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+     url('http://mirohristov.com/v5/font/nexa_light-webfont.woff') format('woff'),
+     url('http://mirohristov.com/v5/font/nexa_light-webfont.ttf') format('truetype'),
+      url('http://mirohristov.com/v5/font/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Cousine';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cousine'), url('0IpceuvDvCegpU9Mz8MQ_g.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
