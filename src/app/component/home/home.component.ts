@@ -13,6 +13,7 @@ import {
 
 @Component({
  templateUrl: './home.html',
+ styleUrls:['./home.css'],
   animations: [
     trigger('moveBgImageSection', [
       state('show', style({
@@ -21,7 +22,7 @@ import {
         transition: 'all 0.5s ease-in 1s'
       })),
       state('hide',style({
-        opacity: 0.6,
+        opacity: 0.4,
         transform: "translateX(0%)",
         transition: 'all 0.5s ease-in 1s'
       })),
@@ -35,7 +36,7 @@ import {
         transition: 'all 0.5s ease-in 1s'
       })),
       state('hide',style({
-       
+       opacity:1,
         transform: "translateX(0%)",
         transition: 'all 0.5s ease-in 1s'
       })),
