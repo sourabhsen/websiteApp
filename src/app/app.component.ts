@@ -10,6 +10,7 @@ export class AppComponent {
   
   public isClickedVisible = false;
   public toggleMenu = function () {
+      console.log('hi');
       this.isClickedVisible = !this.isClickedVisible;
   }
 }
